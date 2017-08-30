@@ -1,0 +1,9 @@
+<h1> Here is a List of our Landmarks </h1>
+
+<ul>
+  <% Landmark.all.each do |landmark| %>
+  <li><a href="/landmarks/<%= landmark.id %>"> <%= landmark.name %> <%= landmark.year_completed %></a> </li>
+  <%end%>
+</ul>
+
+<a href="/figures/new">Click To Create a NEW Figure</a>

@@ -1,0 +1,9 @@
+<h1> Here is a List of our Figures </h1>
+
+<ul>
+  <% Figure.all.each do |figure| %>
+  <li><a href="/figures/<%= figure.id %>"> <%= figure.name %> </a> </li>
+  <%end%>
+</ul>
+
+<a href="/figures/new">Click To Create a NEW Figure</a>

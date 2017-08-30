@@ -1,0 +1,13 @@
+<h1> Here is this Figure <%= @figure.name %></h1>
+
+<ul>
+  Name: <%= @figure.name %><br>
+  ID: <%= @figure.id %>
+
+</ul>
+
+  <ol>
+    <% @figure.landmarks.all.each do |landmark|%>
+      <li>  <%= landmark.name %> </li>
+    <%end%>
+ </ol>
